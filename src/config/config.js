@@ -29,7 +29,8 @@ export const config = {
     },
     tutorialUrl: "https://github.com/SonMooSans/discord-bot-dashboard",
     serverUrl: "https://zohann-bot-backend.onrender.com",
-    inviteUrl: "https://discord.com/api/oauth2/authorize?client_id=1004280473956139038&permissions=8&scope=bot",
+    // ✅ FIXED: Using your correct Client ID
+    inviteUrl: "https://discord.com/api/oauth2/authorize?client_id=1476391177136902264&permissions=8&scope=bot",
     data: {
         dashboard: dashboardData,
     },
