@@ -70,6 +70,8 @@ function AppRouter() {
                         <>
                             <Route path={`/auth`} element={<AuthLayout isCallback/>}/>
                             <Route path={`/signin`} element={<AuthLayout/>} exact/>
+                            {/* ✅ FIXED: Added this route to handle Discord callback */}
+                            <Route path={`/api/auth/callback`} element={<AuthLayout isCallback/>} />
                             <Route path="*" element={
                                 <Navigate replace to="/signin"/>
                             }/>
